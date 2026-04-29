@@ -9,10 +9,10 @@ Update this README every week.
 
 | Field | Value |
 |---|---|
-| Student Name | |
-| GitHub Username | |
-| Project Title | |
-| Chosen AI Approach | |
+| Student Name | daniel|
+| GitHub Username | danyel430 |
+| Project Title | blockchain|
+| Chosen AI Approach |Anomaly detector: distribución exponencial sobre tiempos entre bloques, test KS, α=0.01 |
 
 ## Module Tracking
 
@@ -20,15 +20,15 @@ Use one of these values: `Not started`, `In progress`, `Done`
 
 | Module | What it should include | Status |
 |---|---|---|
-| M1 | Proof of Work Monitor | Not started |
-| M2 | Block Header Analyzer | Not started |
-| M3 | Difficulty History | Not started |
-| M4 | AI Component | Not started |
+| M1 | Proof of Work Monitor | Done |
+| M2 | Block Header Analyzer | Done |
+| M3 | Difficulty History | Done |
+| M4 | AI Component | Done |
 
 ## Current Progress
 
 Write 3 to 5 short lines about what you have already done.
-
+I have finished all of it. 
 - 
 - 
 - 
@@ -37,7 +37,7 @@ Write 3 to 5 short lines about what you have already done.
 
 Write the next small step you will do before the next class.
 
-- 
+- probably revise everything, in case I have missed something
 
 ## Main Problem or Blocker
 
