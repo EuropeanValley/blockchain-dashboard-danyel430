@@ -26,6 +26,8 @@
 
 # with tab4:
 #     render_m4()
+
+
 """
 app.py
 ------
@@ -42,7 +44,8 @@ import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
 # Importar módulos del proyecto
-from modules import m1_pow_monitor, m2_block_header, m3_difficulty_history, m4_ai_component
+from modules import m1_pow_monitor, m2_block_header, m3_difficulty_history, m4_ai_component, m5_merkle_verifier
+
 
 # ── Configuración de la página ─────────────────────────────────────────────────
 st.set_page_config(
@@ -71,6 +74,7 @@ with st.sidebar:
     st.markdown("-  M2 · Block Header Analyzer")
     st.markdown("-  M3 · Difficulty History")
     st.markdown("-  M4 · AI Anomaly Detector")
+    st.markdown("-  M5 · Merkle Proof Verifier")
     st.divider()
 
     st.markdown("### Info")
@@ -94,15 +98,15 @@ st.markdown(
 st.divider()
 
 # ── Pestañas ───────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     " M1 · Proof of Work",
     " M2 · Block Header",
     " M3 · Difficulty History",
     " M4 · AI Anomaly Detector",
+    " M5 · Merkle Verifier",
 ])
 
 # Compartimos los bloques entre M1 y M4 para evitar doble llamada a la API.
-# Usamos st.session_state como caché ligera entre pestañas.
 if "blocks" not in st.session_state or refresh_count != st.session_state.get("last_refresh"):
     st.session_state["blocks"] = None
     st.session_state["last_refresh"] = refresh_count
@@ -120,3 +124,6 @@ with tab3:
 
 with tab4:
     m4_ai_component.render(blocks=st.session_state.get("blocks"))
+
+with tab5:
+    m5_merkle_verifier.render()

@@ -28,8 +28,8 @@ Use one of these values: `Not started`, `In progress`, `Done`
 ## Current Progress
 
 Write 3 to 5 short lines about what you have already done.
-I have finished all of it. 
-- 
+
+- I have finished all of it. 
 - 
 - 
 
@@ -37,13 +37,13 @@ I have finished all of it.
 
 Write the next small step you will do before the next class.
 
-- probably revise everything, in case I have missed something
+- Now, I'll proceed with the optional parts. Though I have M5 finished
 
 ## Main Problem or Blocker
 
 Write here if you are stuck with something.
 
-- 
+- I'm not stuck
 
 ## How to Run
 
