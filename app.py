@@ -44,7 +44,7 @@ import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
 # Importar módulos del proyecto
-from modules import m1_pow_monitor, m2_block_header, m3_difficulty_history, m4_ai_component, m5_merkle_verifier, m6_security_score
+from modules import m1_pow_monitor, m2_block_header, m3_difficulty_history, m4_ai_component, m5_merkle_verifier, m6_security_score, m7_ai_predictor
 
 
 # ── Configuración de la página ─────────────────────────────────────────────────
@@ -76,6 +76,7 @@ with st.sidebar:
     st.markdown("-  M4 · AI Anomaly Detector")
     st.markdown("-  M5 · Merkle Proof Verifier")
     st.markdown("-  M6 · Security Score (51%)")
+    st.markdown("-  M7 · AI Difficulty Predictor")
     st.divider()
 
     st.markdown("### Info")
@@ -99,13 +100,14 @@ st.markdown(
 st.divider()
 
 # ── Pestañas ───────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     " M1 · Proof of Work",
     " M2 · Block Header",
     " M3 · Difficulty History",
     " M4 · AI Anomaly Detector",
     " M5 · Merkle Verifier",
     " M6 · Security Score",
+    " M7 · AI Predictor",
 ])
 
 # Compartimos los bloques entre M1, M4 y M6 para evitar doble llamada a la API.
@@ -132,3 +134,6 @@ with tab5:
 
 with tab6:
     m6_security_score.render(blocks=st.session_state.get("blocks"))
+
+with tab7:
+    m7_ai_predictor.render()

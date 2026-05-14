@@ -37,7 +37,7 @@ Write 3 to 5 short lines about what you have already done.
 
 Write the next small step you will do before the next class.
 
-- Now, I'll proceed with the optional parts. Though I have M5 finished
+- I have finished everything, including the optional rewuirements
 
 ## Main Problem or Blocker
 
